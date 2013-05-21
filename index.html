@@ -54,24 +54,53 @@
                     <p>Esc</p>
                     <p>Ctrl+[</p>
                     <p>Ctrl+c - doesn't work with abbreviations and doesn't trigger InsertLeave</p>
+                    <p>Possible to map C-c to Esc to get full behavior - perhaps has side effects though. Also bad for your hands!</p>
+                </section>
+                <section>
+                    <h1>Basics</h1>
+                    <p>C-w (think <b>word</b>)</p>
+                    <p>C-u (think <b>uh-oh</b>)</p>
+                    <p>C-j (think hjkl)</p>
+                    <p>C-h (think hjkl)</p>
+                    <p>C-i (think <b>indent</b>) </p>
+                    <p>Bonus: Top three also work in the shell (in both vi and emacs mode)!</p>
+                </section>
+                <section>
+                    <h1>Getting help for insert mode</h1>
+                    <p>prefix the thing you're looking for with 'i_'</p>
+                    <p>:help i_^w</p>
+                    <p>(this also works for other modes, e.g. v_ for visual)</p>
+                    <p>also... :help Insert-mode</p>
+                </section>
+                <section>
+                    <h1>Registers</h1>
+                    <p>C-r <span>register</span></p>
+                    <p>expression register</p>
+
+                    Registers: 
+                    + expression register:
+                    ++ current date: "=strftime('%c')
+                    ++ vim value, e.g. "=&guioptions
+                    + : or / registers, e.g. ":, "/ (although better done with q: and q/)
                 </section>
                 <section>
                     <h1>Text width</h1>
                     <p>Most useful for actual 'text' editing rather than coding</p>
-                    <p>gq, gqgq/gqq</p>
+                    <p>gw, gwgw/gww, ^ogwap</p>
                 </section>
                 <section>
                     <h1>Abbreviations</h1>
                     <p>Auto-fix common typos: teh -&gt; the</p>
                 </section>
+                <section>
+                    <h1>Completion</h1>
+                    <p>C-p / C-n - bread and butter completion</p>
+                    <p>C-l - line completion, suprisingly handy, smart about tabs</p>
+                </section>
 
                 <!-- some notes
 
-                Registers: 
-                + expression register:
-                ++ current date: "=strftime('%c')
-                ++ vim value, e.g. "=&guioptions
-                + : or / registers, e.g. ":, "/ (although better done with q: and q/)
+                Getting help for insert mode: prefix the thing you're looking for with 'i_'
 
                 -->
 
