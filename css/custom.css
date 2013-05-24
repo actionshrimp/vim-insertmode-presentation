@@ -6,3 +6,8 @@ div.reveal div.slides section p span.kb {
     border-color: #DDD #BBB #BBB #DDD;
     border-radius: 6px;
 }
+
+div.reveal div.slides section p span.star {
+    font-size: 150%;
+    color: red;
+}
