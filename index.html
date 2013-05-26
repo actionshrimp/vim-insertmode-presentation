@@ -43,30 +43,61 @@
                     <p>VimLondon, 28th May 2013</p>
                 </section>
                 <section>
+                    <h1>Woooo! Insert mode!!</h1>
+                    <p><a href="http://stackoverflow.com/questions/1737163/vim-traversing-text-in-insert-mode">Traversing text in Insert Mode</a></p>
+                </section>
+                <section>
                     <h1>Getting <b>out</b> of insert mode</h1>
                     <p><span class="kb">Esc</span>, <span class="kb">C-[</span>, <span class="kb">C-c</span><span class="star">*</span></p>
-                    <p><span class="star">*</span>breaks abbreviations, InsertLeave autocmd</p>
+                    <p class="fragment fade-in"><span class="star">*</span>breaks abbreviations, InsertLeave autocmd</p>
+
                 </section>
                 <section>
                     <h1>Basics</h1>
-                    <p>C-w (think <b>word</b>)</p>
-                    <p>C-u (think <b>uh-oh</b>)</p>
-                    <p>C-j (think hjkl)</p>
-                    <p>C-h (think hjkl)</p>
-                    <p>C-i (think <b>indent</b>) </p>
-                    <p>C-a</p>
-                    <p>Bonus: Top three also work in the shell (in both vi and emacs mode)!</p>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Key</td>
+                                <td>How to remember it</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="kb">C-w</span></td><td><span class="it">word</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-u</span></td><td><span class="it">uh-oh</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-j</span></td><td>hjkl</td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-h</span></td><td>hjkl</td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-i</span></td><td><span class="it">indent</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-a</span></td><td>??</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span class="b">Bonus</span>: Top three also work in the shell (in both vi and emacs mode)!</p>
                 </section>
                 <section>
                     <h1>Registers</h1>
-                    <p>C-r <span>register</span></p>
-                    <p>expression register</p>
-
-                    Registers: 
-                    + expression register:
-                    ++ current date: "=strftime('%c')
-                    ++ vim value, e.g. "=&guioptions
-                    + : or / registers, e.g. ":, "/ (although better done with q: and q/)
+                    <p><span class="kb">C-r</span> <span class="it">&lt;register name&gt;</span></p>
+                    Useful registers in insert mode:
+                    <ul>
+                        <li><span class="kb">=</span>  expression register:</li>
+                        <li>
+                            <ul>
+                                <li>current date: "=strftime('%c')</li>
+                                <li>vim value, e.g. "=&guioptions</li>
+                            </ul>
+                        </li>
+                        <li><span class="kb">:</span> or <span class="kb">/</span> registers, e.g. ":, "/ (although better done with q: and q/)</li>
+                    </ul>
                 </section>
                 <section>
                     <h1>Text width</h1>
@@ -98,15 +129,15 @@
                 </section>
 
                 <!--section>
-                    <h2>Heads Up</h2>
-                    <p>
-                        reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-                        support for CSS 3D transforms to see it in its full glory.
-                    </p>
+                <h2>Heads Up</h2>
+                <p>
+                    reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+                    support for CSS 3D transforms to see it in its full glory.
+                </p>
 
-                    <aside class="notes">
-                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                    </aside>
+                <aside class="notes">
+                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                </aside>
                 </section-->
 
             </div>

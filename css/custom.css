@@ -1,13 +1,31 @@
-div.reveal div.slides section p span.kb {
+div.reveal div.slides section * thead td {
+    font-weight: bold;
+}
+
+div.reveal div.slides section * td {
+    padding: 0.3em;
+}
+
+div.reveal div.slides section * .b {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+div.reveal div.slides section * .it {
+    font-style: italic;
+}
+
+div.reveal div.slides section * span.kb {
     border: 0.2em solid;
     background: #EEE;
-    padding: 0.2em 0.5em;
+    padding: 0.05em 0.5em;
     white-space: nowrap;
     border-color: #DDD #BBB #BBB #DDD;
     border-radius: 6px;
+    margin: 0.5em 0em;
 }
 
-div.reveal div.slides section p span.star {
+div.reveal div.slides section * .star {
     font-size: 150%;
     color: red;
 }
