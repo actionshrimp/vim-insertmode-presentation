@@ -50,15 +50,31 @@
                     <h1>Getting <b>out</b> of insert mode</h1>
                     <p><span class="kb">Esc</span>, <span class="kb">C-[</span>, <span class="kb">C-c</span><span class="star">*</span></p>
                     <p class="fragment fade-in"><span class="star">*</span>breaks abbreviations, InsertLeave autocmd</p>
+                    <p class="fragment fade-in">:inoremap &lt;C-c&gt; &lt;Esc&gt;</p>
 
                 </section>
                 <section>
-                    <h1>Basics</h1>
+                    <h1>Text width</h1>
+                    <p>e.g. :set textwidth=80</p>
+                    <p>gw, gwgw/gww</p>
+                    <p>gwap</p>
+                    <p>gggwG</p>
+                    <p>:set colorcolumn=80</p>
+                </section>
+                <section>
+                    <h1>Abbreviations</h1>
+                    <p>e.g. :iabbr teh the</p>
+                    <p>Auto-fix common typos: teh -&gt; the</p>
+                    <p>:abbr, :iabbr</p>
+                    <p><a href="https://github.com/takac/dot_files/blob/master/vimrc">Examples</a></p>
+                </section>
+                <section>
+                    <h1>Basic Keys</h1>
                     <table width="100%">
                         <thead>
                             <tr>
                                 <td>Key</td>
-                                <td>How to remember it</td>
+                                <td>A way to remember it</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -78,40 +94,32 @@
                                 <td><span class="kb">C-i</span></td><td><span class="it">indent</span></td>
                             </tr>
                             <tr>
-                                <td><span class="kb">C-a</span></td><td>??</td>
+                                <td><span class="kb">C-a</span></td><td>again!</td>
+                            </tr>
+                            <tr>
+                                <td><span class="kb">C-y</span> / <span class="kb">C-e</span></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
-                    <p><span class="b">Bonus</span>: Top three also work in the shell (in both vi and emacs mode)!</p>
+                    <p class="fragment fade-in"><span class="b">Bonus</span>: Top three also work in the shell (in both vi and emacs mode)!</p>
                 </section>
                 <section>
                     <h1>Registers</h1>
                     <p><span class="kb">C-r</span> <span class="it">&lt;register name&gt;</span></p>
-                    Useful registers in insert mode:
+                    <br>
+                    <h3>Useful registers in insert mode:</h3>
+                    <p><span class="kb">/</span>, <span class="kb">:</span> (although often better to use q: and q/)</p>
+                    <p><span class="kb">=</span>  expression register:</p>
                     <ul>
-                        <li><span class="kb">=</span>  expression register:</li>
-                        <li>
-                            <ul>
-                                <li>current date: "=strftime('%c')</li>
-                                <li>vim value, e.g. "=&guioptions</li>
-                            </ul>
-                        </li>
-                        <li><span class="kb">:</span> or <span class="kb">/</span> registers, e.g. ":, "/ (although better done with q: and q/)</li>
+                        <li>current date: "=strftime('%c')</li>
+                        <li>vim value, e.g. "=&guioptions</li>
                     </ul>
                 </section>
                 <section>
-                    <h1>Text width</h1>
-                    <p>Most useful for actual 'text' editing rather than coding</p>
-                    <p>gw, gwgw/gww, ^ogwap</p>
-                </section>
-                <section>
-                    <h1>Abbreviations</h1>
-                    <p>Auto-fix common typos: teh -&gt; the</p>
-                </section>
-                <section>
                     <h1>Completion</h1>
-                    <p>C-p / C-n - bread and butter completion</p>
-                    <p>C-l - line completion, suprisingly handy, smart about tabs</p>
+                    <p><span class="kb">C-p</span> / <span class="kb">C-n</span> - next/prev word completion</p>
+                    <p><span class="kb">C-l</span> - line completion, (suprisingly useful, smart about tabs)</p>
                 </section>
                 <section>
                     <h1>Getting help for insert mode</h1>
@@ -123,6 +131,7 @@
                 <section>
                     <h1>Who am I?</h1>
                     <p>Dave Aitken</p>
+                    <p>Web developer at 7digital (we're hiring!)</p>
                     <p>
                         <a href="http://twitter.com/actionshrimp">@actionshrimp</a>
                     </p>

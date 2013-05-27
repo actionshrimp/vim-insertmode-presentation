@@ -2,8 +2,12 @@ div.reveal div.slides section * thead td {
     font-weight: bold;
 }
 
+div.reveal div.slides section table, div.reveal div.slides section * table {
+    font-size: 80%;
+}
+
 div.reveal div.slides section * td {
-    padding: 0.3em;
+    padding: 0.2em;
 }
 
 div.reveal div.slides section * .b {
@@ -16,6 +20,7 @@ div.reveal div.slides section * .it {
 }
 
 div.reveal div.slides section * span.kb {
+    font-size: inherit;
     border: 0.2em solid;
     background: #EEE;
     padding: 0.05em 0.5em;
